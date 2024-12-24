@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Selsa Septiani</title>
+</head>
+<body>
+    <header>
+        <div class="floating-shapes">
+            <!-- JavaScript will add shapes dynamically -->
+        </div>
+        <div class="profile-section">
+            <div class="profile-container">
+                <img src="caa.jpg" alt="Selsa Septiani" class="profile-photo">
+            </div>
+            <h1 class="name-title">Selsa Septiani</h1>
+            <p class="subtitle">Web Developer | Designer | Creative</p>
+            
+            <nav class="nav-pills">
+                <a href="#about" class="nav-pill">Tentang</a>
+                <a href="#projects" class="nav-pill">Proyek</a>
+                <a href="#skills" class="nav-pill">Keahlian</a>
+                <a href="#contact" class="nav-pill">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+   <section id="about" class="curve-top">
+    <div class="section-title">Tentang Saya</div>
+    <div class="about-container">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Journey Dimulai</h3>
+                    <p>Berawal dari passion dalam teknologi, saya memulai perjalanan sebagai web developer di tahun 2020.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Pendidikan</h3>
+                    <p>S1 Sistem Informasi<br>Universitas Banten Jaya (2022-Sekarang)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Pengalaman Profesional</h3>
+                    <ul class="experience-list">
+                        <li><span class="company">PT Digital Kreasi</span><br>Web Developer (2022-Sekarang)</li>
+                        <li><span class="company">Startup ABC</span><br>Frontend Developer Intern (2021-2022)</li>
+                        <li><span class="company">Freelance</span><br>Web Developer (2020-2021)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <h4>Hackathon Nasional 2023</h4>
+                <p>Juara 1</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🌟</div>
+                <h4>Tech Festival 2022</h4>
+                <p>Best Innovation Award</p>
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-icon">👑</div>
+                <h4>Community Dev</h4>
+                <p>Top 10 Developer of The Year 2023</p>
+            </div>
+        </div>
+
+        <div class="certifications-carousel">
+            <div class="cert-card">
+                <div class="cert-logo">D</div>
+                <h4>Dicoding</h4>
+                <p>Full Stack HTML Development</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-logo">M</div>
+                <h4>Meta</h4>
+                <p>React Developer Certification</p>
+            </div>
+            <div class="cert-card">
+                <div class="cert-logo">A</div>
+                <h4>AWS</h4>
+                <p>Cloud Practitioner</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="projects" class="projects">
+        <div class="section-title">Proyek Terbaru</div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="perpustakaan.jpeg" alt="Smart Library System">
+                <div class="project-info">
+                    <h3>Smart Library System</h3>
+                    <p>Sistem manajemen perpustakaan digital dengan fitur QR code untuk peminjaman cepat.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="freshmart.jpeg" alt="FreshMart E-Commerce">
+                <div class="project-info">
+                    <h3>FreshMart E-Commerce</h3>
+                    <p>Platform e-commerce untuk produk segar dengan sistem pre-order.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="taskmaster.jpeg" alt="TaskMaster Pro">
+                <div class="project-info">
+                    <h3>TaskMaster Pro</h3>
+                    <p>Aplikasi manajemen tugas dengan fitur kolaborasi tim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-title">Keahlian</div>
+        <div class="skills-container">
+            <div class="skill-bubble">HTML5</div>
+            <div class="skill-bubble">CSS3</div>
+            <div class="skill-bubble">PHP</div>
+            <div class="skill-bubble">MySQL</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title">Hubungi Saya</div>
+        <div class="contact-links">
+            <a href="mailto:selsaseptiani993@gmail.com" class="contact-button"> MyEmail</a>
+            <a href="https://www.linkedin.com/in/selsaseptiani-developer" class="contact-button">LinkedIn</a>
+            <a href="https://github.com/selsaseptiani-dev" class="contact-button">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portfolio Selsa Septiani. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add floating shapes
+        const floatingShapes = document.querySelector('.floating-shapes');
+        for (let i = 0; i < 20; i++) {
+            const shape = document.createElement('div');
+            shape.classList.add('shape');
+            shape.style.left = `${Math.random() * 100}%`;
+            shape.style.top = `${Math.random() * 100}%`;
+            shape.style.width = `${Math.random() * 50 + 20}px`;
+            shape.style.height = shape.style.width;
+            shape.style.animationDelay = `${Math.random() * 15}s`;
+            floatingShapes.appendChild(shape);
+        }
+    </script>
+</body>
+</html>
